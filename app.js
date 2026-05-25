@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const ejs = require('ejs');
+const router = require('./routes/index');
 
 // -------------------------------------------------------------- Models ------------------ --------------------------------------------
 const userModel = require('./Models/usermodel');
@@ -25,6 +26,6 @@ app.use('/owners', ownersRouter);
 app.use('/products', productsRouter);
 app.use('/users', usersRouter);
 
-
+app.use('/', router);
 
 app.listen(3000);

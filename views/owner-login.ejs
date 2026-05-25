@@ -1,0 +1,19 @@
+<%- include('./partials/header') %>
+    <div class="w-full h-screen flex px-20 bg-zinc-50">
+        <div class="w-1/2 flex items-center justify-center h-screen">
+            <div class="w-full px-32">
+                <h3 class="text-4xl font-bold tracking-tight mb-2 text-zinc-950">Admin Area</h3>
+                <h4 class="text-xl capitalize mb-8 text-zinc-500">Create / Login Admin Account</h4>
+                <form action="/owners/create" method="post" autocomplete="off">
+                    <input class="block bg-white w-full px-4 py-3 border-[1px] rounded-lg mb-4 border-zinc-200 focus:outline-none focus:border-blue-500 transition shadow-sm"
+                        type="text" placeholder="Full Name (for registration)" name="fullname">
+                    <input class="block bg-white w-full px-4 py-3 border-[1px] rounded-lg mb-4 border-zinc-200 focus:outline-none focus:border-blue-500 transition shadow-sm"
+                        type="email" placeholder="Email Address" name="email" required>
+                    <input class="block bg-white w-full px-4 py-3 border-[1px] rounded-lg mb-4 border-zinc-200 focus:outline-none focus:border-blue-500 transition shadow-sm"
+                        type="password" placeholder="Password" name="password" required>
+                    <input class="w-full py-4 rounded-lg mt-4 bg-zinc-900 hover:bg-zinc-800 text-white font-semibold transition cursor-pointer shadow-md hover:shadow-lg" type="submit" value="Submit Access">
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/footer') %>
